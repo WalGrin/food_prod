@@ -261,6 +261,17 @@ window.addEventListener('DOMContentLoaded', () => {
             })
         });
     }
+
+    function showModal() {
+        const prevModalDialog = document.querySelector('.modal__dialog');
+
+        prevModalDialog.classList.add('hide');
+        openModal();
+
+        const thanksModal = document.createElement('div');
+        thanksModal.classList.add('modal__dialog');
+
+    }
 });
 
 
